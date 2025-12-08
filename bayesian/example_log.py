@@ -31,3 +31,9 @@ for word in text.split():
 
 print(f"Log Score Spam: {log_score_spam:.4f}")
 print(f"Log Score Ham: {log_score_ham:.4f}")
+
+
+if log_score_spam > log_score_ham:
+    print("Result: SPAM 🔴")
+else:
+    print("Result: HAM 🟢")
